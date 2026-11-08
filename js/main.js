@@ -161,8 +161,7 @@ function render(state) {
   $('#netLabel').textContent = state.socket === 'demo' ? s.status.demo : s.socket[state.socket] ?? '';
 
   const band = renderBand(ctx);
-  $('#lamp').style.background = `var(--lv${band.overall})`;
-  $('#lamp').style.color = `var(--lv${band.overall})`;
+  $('#level').dataset.level = String(band.overall);
   $('#overallVal').textContent = band.label;
   $('#overallSub').textContent = band.sub;
   $('#chips').innerHTML = String(band.chips);

@@ -32,7 +32,7 @@ export function renderBand(ctx) {
     sub: updated ? `${s.updated} ${formatJST(updated, ctx.lang, { hour: '2-digit', minute: '2-digit' })} JST` : s.status.loading,
     chips: html`${keys.map((k) => {
       const lv = h[k].level;
-      return html`<button class="chip" data-tab="${HAZARD_TAB[k]}" style="--c:${lv === 4 ? 'var(--lv4-edge)' : levelColor(lv)}"><span class="h">${s.hazards[k]} · ${s.levels[lv]}</span><span class="s">${chipText(k, h, ctx)}</span></button>`;
+      return html`<button class="chip" data-tab="${HAZARD_TAB[k]}" style="--c:${levelColor(lv)}"><span class="h">${s.hazards[k]} · ${s.levels[lv]}</span><span class="s">${chipText(k, h, ctx)}</span></button>`;
     })}`,
   };
 }
