@@ -70,3 +70,6 @@ export const ALERT = {
 export const SOCKET = { baseDelayMs: 1000, maxDelayMs: 60_000 };
 
 export const TIME = { MINUTE, HOUR, DAY };
+
+/** Timestamp the fixtures are generated around (scripts/make-fixtures.mjs). */
+export const DEMO_ANCHOR = Date.UTC(2026, 10, 8, 0, 0, 0);
