@@ -45,5 +45,5 @@ export function sourcesView(ctx) {
     </table></div>
   </div>
   <div class="card"><h3>${t.aboutTitle}</h3><p class="lead">${t.about}</p>
-    <p class="note"><a href="https://github.com/franciscojav812/sonae" target="_blank" rel="noopener">${t.code} (MIT) ↗</a></p></div>`;
+    <p class="note"><a href="https://github.com/Franciscojav812/sonae_app" target="_blank" rel="noopener">${t.code} (MIT) ↗</a></p></div>`;
 }
