@@ -4,7 +4,7 @@
  * last good payload per source with an explicit staleness limit, so the UI can
  * tell the user how old the data is. Two caches would disagree.
  */
-const VERSION = 'sonae-v1.1.0';
+const VERSION = 'sonae-v1.2.0';
 const SHELL = [
   './',
   './index.html',
@@ -18,9 +18,14 @@ const SHELL = [
   './js/i18n.js',
   './js/store.js',
   './js/data/cities.js',
+  './js/data/advice.js',
   './js/data/content.js',
   './js/data/geography.js',
+  './js/data/glossary.js',
+  './js/data/provenance.js',
+  './js/domain/advice.js',
   './js/domain/alerts.js',
+  './js/domain/confidence.js',
   './js/domain/eew.js',
   './js/domain/hazards.js',
   './js/domain/quakes.js',
@@ -43,6 +48,7 @@ const SHELL = [
   './js/ui/views/hazards.js',
   './js/ui/views/overview.js',
   './js/ui/views/quakes.js',
+  './js/ui/views/sources.js',
   './js/ui/views/weather.js',
   './fixtures/p2p-551.json',
   './fixtures/p2p-552.json',

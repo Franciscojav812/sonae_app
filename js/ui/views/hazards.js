@@ -2,7 +2,7 @@
 import { html, pickLang } from '../../lib/format.js';
 import { jmaIntensity } from '../../domain/typhoons.js';
 import { EMERGENCY_NUMBERS, GUIDE, MISSILE_HISTORY, MISSILE_STEPS, VOLCANOES, VOLCANO_LEVELS } from '../../data/content.js';
-import { statusBadge, sourceNote } from '../common.js';
+import { statusBadge, sourceNote, provenanceLine } from '../common.js';
 
 export function tsunamiView(ctx) {
   const { state, s } = ctx;
@@ -17,6 +17,7 @@ export function tsunamiView(ctx) {
         </tbody></table></div>`
       : html`<p class="big" style="color:var(--lv0)">${s.levels[0]}</p><p class="lead">${s.tsunami.none}</p>`}
     <p class="note">${s.tsunami.rule}</p>${sourceNote(state.sources.tsunami, ctx)}
+    ${provenanceLine('tsunami', ctx)}
   </div>
   <div class="card"><h3>${s.tsunami.levels}</h3><div class="tblwrap"><table class="t">
     <thead><tr><th></th><th>${s.tsunami.height}</th><th>${s.tsunami.action}</th></tr></thead><tbody>
@@ -40,6 +41,7 @@ export function typhoonView(ctx) {
       })
       : html`<p class="lead">${s.typhoon.none}</p>`}
     ${sourceNote(state.sources.typhoons, ctx)}
+    ${provenanceLine('typhoons', ctx)}
   </div>
   <div class="card"><h3>${s.typhoon.class}</h3><div class="tblwrap"><table class="t"><tbody>
     <tr><td>${s.typhoon.classes.strong}</td><td class="mono">33 – 44 m/s</td></tr>
@@ -54,7 +56,7 @@ export function missileView(ctx) {
   <div class="card"><h3>${s.missile.title}<span class="src"><span class="badge">J-ALERT</span></span></h3>
     <p class="big" style="color:var(--lv0)">${s.missile.state}</p>
     <p class="lead">${s.missile.body}</p>
-    <p class="note"><a href="https://www.kokuminhogo.go.jp/" target="_blank" rel="noopener">${s.missile.portal} ↗</a></p>
+    ${provenanceLine('missile', ctx)}
   </div>
   <div class="card"><h3>${s.missile.todo}</h3><ol class="steps">${MISSILE_STEPS[lang].map((x) => html`<li>${x}</li>`)}</ol></div>
   <div class="card"><h3>${s.missile.history}</h3><ul class="feed">
@@ -70,7 +72,7 @@ export function volcanoView(ctx) {
     <thead><tr><th>${s.volcano.name}</th><th>${s.volcano.notes}</th></tr></thead><tbody>
     ${VOLCANOES.map((v) => html`<tr><td><b>${lang === 'ja' ? v.ja : v.en}</b><br><span class="muted mono" style="font-size:11px">${v.lat.toFixed(2)}N ${v.lon.toFixed(2)}E</span></td><td>${pickLang(v.note, lang)}</td></tr>`)}
   </tbody></table></div>
-  <p class="note">${s.volcano.note} <a href="https://www.jma.go.jp/bosai/map.html#contents=volcano" target="_blank" rel="noopener">JMA ↗</a></p></div>
+  <p class="note">${s.volcano.note}</p>${provenanceLine('volcano', ctx)}</div>
   <div class="card"><h3>${s.volcano.levels}</h3><div class="tblwrap"><table class="t"><tbody>
     ${VOLCANO_LEVELS.map(([n, label]) => html`<tr><td class="mono"><b style="color:${color(n)}">Lv ${n}</b></td><td>${pickLang(label, lang)}</td></tr>`)}
   </tbody></table></div></div>`;

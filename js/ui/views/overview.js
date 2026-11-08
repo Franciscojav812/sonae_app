@@ -1,7 +1,9 @@
 import { html, relativeTime } from '../../lib/format.js';
 import { shindoIndex } from '../../domain/quakes.js';
 import { weatherFlags } from '../../domain/weather.js';
-import { cityName, depthColor, levelColor, statusBadge, sourceNote } from '../common.js';
+import { cityName, depthColor, levelColor, statusBadge, sourceNote, provenanceLine } from '../common.js';
+import { adviceKey, adviceLevel } from '../../domain/advice.js';
+import { ADVICE } from '../../data/advice.js';
 
 /** Merges every source into one 24-hour feed of what matters. */
 function significantEvents(ctx) {
@@ -34,7 +36,17 @@ export function overviewView(ctx) {
   const topShindo = felt.reduce((a, b) => (shindoIndex(b.maxShindo) > shindoIndex(a?.maxShindo) ? b : a), null)?.maxShindo;
   const w = state.weather;
 
+  const key = adviceKey(ctx.hazards, { eewActive: ctx.eewActive });
+  const advice = ADVICE[key][lang];
+  const adviceLv = adviceLevel(key, ctx.hazards);
+
   return html`
+  <div class="card advice" style="--c:${adviceLv ? levelColor(adviceLv) : 'var(--brand)'}">
+    <h3>${s.advice.title}${state.sources.quakes?.status === 'demo' ? html`<span class="src"><span class="badge demo">${s.status.demo}</span></span>` : ''}</h3>
+    <p class="advice-title">${advice.title}</p>
+    <ol class="steps">${advice.steps.map((x) => html`<li>${x}</li>`)}</ol>
+    <p class="note">${s.advice.authorities}</p>
+  </div>
   <div class="card"><h3>${s.overview.latest}<span class="src">${statusBadge(state.sources.quakes, ctx)}${statusBadge(state.sources.weather, ctx)}</span></h3>
     ${events.length
       ? html`<ul class="feed">${events.slice(0, 8).map((e) => html`<li><span class="k" style="--c:${e.color}"></span><div><b>${e.title}</b><br><small>${e.sub}</small></div><time>${relativeTime(e.time, now, lang)}</time></li>`)}</ul>`
@@ -51,5 +63,6 @@ export function overviewView(ctx) {
   <div class="card"><h3>${s.tsunami.title}<span class="src">${statusBadge(state.sources.tsunami, ctx)}</span></h3>
     <p class="lead">${state.tsunami.active ? html`<b style="color:var(--lv2)">${s.tsunami.active}</b>` : s.tsunami.none}</p>
     <p class="note">${s.tsunami.rule}</p>${sourceNote(state.sources.tsunami, ctx)}
+    ${provenanceLine('tsunami', ctx)}
   </div>`;
 }

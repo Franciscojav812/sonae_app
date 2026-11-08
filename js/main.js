@@ -11,6 +11,7 @@ import { createSources } from './services/sources.js';
 import { createScheduler } from './services/scheduler.js';
 import { createRealtimeChannel } from './services/realtime.js';
 import { computeHazards } from './domain/hazards.js';
+import { assessConfidence, bannerState } from './domain/confidence.js';
 import { normalizeP2PQuakes } from './domain/quakes.js';
 import { normalizeTsunami } from './domain/tsunami.js';
 import { normalizeEEW, isEewActive } from './domain/eew.js';
@@ -24,10 +25,11 @@ import { overviewView } from './ui/views/overview.js';
 import { quakesView } from './ui/views/quakes.js';
 import { weatherView } from './ui/views/weather.js';
 import { tsunamiView, typhoonView, missileView, volcanoView, guideView } from './ui/views/hazards.js';
+import { sourcesView } from './ui/views/sources.js';
 
 const VIEWS = {
   overview: overviewView, quakes: quakesView, tsunami: tsunamiView, typhoon: typhoonView,
-  weather: weatherView, missile: missileView, volcano: volcanoView, guide: guideView,
+  weather: weatherView, missile: missileView, volcano: volcanoView, guide: guideView, sources: sourcesView,
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -149,7 +151,9 @@ function render(state) {
   const s = STRINGS[state.lang];
   const eewActive = isEewActive(state.eew, now);
   const hazards = computeHazards(state, now);
-  const ctx = { state, s, lang: state.lang, now, hazards, eewActive };
+  const confidence = assessConfidence(state.sources);
+  const banner = bannerState(hazards.overall, confidence);
+  const ctx = { state, s, lang: state.lang, now, hazards, eewActive, confidence, banner };
 
   document.documentElement.lang = state.lang;
   for (const el of document.querySelectorAll('[data-i]')) el.textContent = lookup(s, el.dataset.i) ?? '';

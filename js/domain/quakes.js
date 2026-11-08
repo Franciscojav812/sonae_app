@@ -4,7 +4,7 @@
  *
  * Normalized quake:
  * { id, sources: ('JMA'|'USGS')[], time, magnitude, magType, usgsMagnitude,
- *   depthKm, lat, lon, place, maxShindo, tsunami }
+ *   depthKm, lat, lon, place, maxShindo, tsunami, url? }  (url: USGS event page when known)
  */
 import { distanceKm } from '../lib/geo.js';
 
@@ -98,6 +98,7 @@ export function normalizeUSGS(geojson) {
         place: (f.properties.place ?? '').replace(/,\s*Japan$/i, ''),
         maxShindo: null,
         tsunami: f.properties.tsunami ? 'Checking' : 'None',
+        url: f.properties.url ?? `https://earthquake.usgs.gov/earthquakes/eventpage/${f.id}`,
       };
     });
 }
@@ -128,6 +129,7 @@ export function mergeQuakes(jma, usgs, { windowMs, radiusKm }) {
       result[best].sources.push('USGS');
       result[best].usgsMagnitude = u.magnitude;
       result[best].usgsMagType = u.magType;
+      result[best].url = u.url;
     } else {
       result.push({ ...u });
     }
