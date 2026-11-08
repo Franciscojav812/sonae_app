@@ -1,0 +1,18 @@
+{
+  "name": "sonae",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sonae 備え — real-time multi-hazard monitor for Japan (earthquakes, EEW, tsunami, typhoons, weather, J-Alert, volcanoes).",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "test": "node --test tests/",
+    "check": "node scripts/check-syntax.mjs",
+    "fixtures": "node scripts/make-fixtures.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "Francisco",
+  "license": "MIT"
+}
