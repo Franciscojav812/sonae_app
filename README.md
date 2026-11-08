@@ -9,7 +9,9 @@ Earthquakes · Earthquake Early Warning · Tsunami · Typhoons · Weather · J-A
 
 日本語 · Español · English &nbsp;|&nbsp; PWA · works offline · zero dependencies · 58 unit tests
 
-![CI](https://github.com/franciscojav812/sonae/actions/workflows/ci.yml/badge.svg)
+**[▶ Live demo — sonaeapp.vercel.app](https://sonaeapp.vercel.app)** &nbsp;·&nbsp; [Example data](https://sonaeapp.vercel.app/?demo)
+
+![CI](https://github.com/Franciscojav812/sonae_app/actions/workflows/ci.yml/badge.svg)
 
 </div>
 
@@ -165,8 +167,8 @@ sw.js                  offline app shell
 Any static server works. ES modules need `http://`, not `file://`.
 
 ```bash
-git clone https://github.com/franciscojav812/sonae.git
-cd sonae
+git clone https://github.com/Franciscojav812/sonae_app.git
+cd sonae_app
 npm start                 # python3 -m http.server 5173
 # open http://localhost:5173          live data
 # open http://localhost:5173/?demo    example data, no network needed
@@ -181,7 +183,7 @@ python3 scripts/screenshots.py   # regenerate README images (Playwright + ffmpeg
 
 ## Deploy
 
-Static files only. On **Vercel**, import the repository with no build command; `vercel.json` adds a strict Content-Security-Policy and serves `sw.js` uncached. GitHub Pages also works as is.
+Live at **[sonaeapp.vercel.app](https://sonaeapp.vercel.app)**, deployed from `main`. Static files only: on **Vercel**, import the repository with no build command and no framework preset; `vercel.json` adds a strict Content-Security-Policy and serves `sw.js` uncached. GitHub Pages also works as is.
 
 ## Testing
 
