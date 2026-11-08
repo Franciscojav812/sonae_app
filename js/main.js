@@ -279,3 +279,8 @@ setInterval(() => store.set((st) => ({ tick: st.tick + 1 })), 30_000);
 render(store.get());
 scheduler.start();
 if (!forceDemo) channel.start();
+
+// Offline app shell. Skipped where service workers are unavailable (file://, sandboxed previews).
+if ('serviceWorker' in navigator && window.isSecureContext) {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
