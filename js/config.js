@@ -71,5 +71,35 @@ export const SOCKET = { baseDelayMs: 1000, maxDelayMs: 60_000 };
 
 export const TIME = { MINUTE, HOUR, DAY };
 
+/**
+ * Base maps: free XYZ tiles that need no API key, each with its required attribution.
+ * "physical" switches provider by zoom: Esri's atlas-style relief for the country
+ * view, OpenTopoMap for detail.
+ */
+export const BASEMAPS = {
+  physical: {
+    label: { ja: '地形', es: 'Físico', en: 'Physical' },
+    layers: [
+      { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}', maxZoom: 8 },
+      { url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', minZoom: 9, maxZoom: 17 },
+    ],
+    attribution: 'Tiles © Esri — US National Park Service · © <a href="https://opentopomap.org" target="_blank" rel="noopener">OpenTopoMap</a> (CC-BY-SA), © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>',
+  },
+  satellite: {
+    label: { ja: '衛星', es: 'Satélite', en: 'Satellite' },
+    layers: [{ url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', maxZoom: 18 }],
+    attribution: 'Tiles © Esri — Maxar, Earthstar Geographics, and the GIS User Community',
+  },
+  gsi: {
+    label: { ja: '地理院地図', es: 'GSI (oficial)', en: 'GSI (official)' },
+    layers: [{ url: 'https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', minZoom: 2, maxZoom: 18 }],
+    attribution: '出典: <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">国土地理院</a> (GSI Japan)',
+  },
+  offlineAttribution: 'Offline · simplified coastline',
+};
+
+/** Initial view: the whole archipelago, Hokkaido to Yaeyama. */
+export const MAP_BOUNDS = [[123, 24], [146.5, 45.6]];
+
 /** Timestamp the fixtures are generated around (scripts/make-fixtures.mjs). */
 export const DEMO_ANCHOR = Date.UTC(2026, 10, 8, 0, 0, 0);
