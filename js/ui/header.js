@@ -1,0 +1,47 @@
+/** Threat band (overall level + one chip per hazard) and the tab bar. */
+import { html, formatJST } from '../lib/format.js';
+import { cityName, levelColor } from './common.js';
+
+export const TABS = ['overview', 'quakes', 'tsunami', 'typhoon', 'weather', 'missile', 'volcano', 'guide'];
+const HAZARD_TAB = { quake: 'quakes', tsunami: 'tsunami', typhoon: 'typhoon', weather: 'weather', missile: 'missile', volcano: 'volcano' };
+
+function chipText(key, h, ctx) {
+  const { s, lang } = ctx;
+  switch (key) {
+    case 'quake': {
+      const q = h.quake.top;
+      if (ctx.eewActive) return s.eew.title;
+      return q ? `M${q.magnitude.toFixed(1)}${q.maxShindo ? ` · ${s.quakes.shindoWord} ${q.maxShindo}` : ''}` : '—';
+    }
+    case 'tsunami': return h.tsunami.grade ? s.tsunami.grades[h.tsunami.grade] : s.levels[0];
+    case 'typhoon': return h.typhoon.top ? `${h.typhoon.top.name} · ${h.typhoon.top.distanceKm.toLocaleString()} km` : '—';
+    case 'weather': return h.weather.city ? `${cityName(h.weather.city, lang)} · ${s.weather.flags[h.weather.kind]}` : s.levels[0];
+    case 'missile': return s.missile.state;
+    case 'volcano': return `16 ${s.volcano.count}`;
+    default: return '';
+  }
+}
+
+export function renderBand(ctx) {
+  const { s, hazards: h, state } = ctx;
+  const keys = Object.keys(HAZARD_TAB);
+  const updated = Math.max(0, ...Object.values(state.sources).map((m) => m?.fetchedAt ?? 0));
+  return {
+    overall: h.overall,
+    label: s.levels[h.overall],
+    sub: updated ? `${s.updated} ${formatJST(updated, ctx.lang, { hour: '2-digit', minute: '2-digit' })} JST` : s.status.loading,
+    chips: html`${keys.map((k) => {
+      const lv = h[k].level;
+      return html`<button class="chip" data-tab="${HAZARD_TAB[k]}" style="--c:${lv === 4 ? 'var(--lv4-edge)' : levelColor(lv)}"><span class="h">${s.hazards[k]} · ${s.levels[lv]}</span><span class="s">${chipText(k, h, ctx)}</span></button>`;
+    })}`,
+  };
+}
+
+export function renderTabs(ctx) {
+  const { s, hazards: h, state } = ctx;
+  const levelOf = Object.fromEntries(Object.entries(HAZARD_TAB).map(([k, t]) => [t, h[k].level]));
+  return html`${TABS.map((t) => {
+    const lv = levelOf[t] ?? 0;
+    return html`<button class="tab" role="tab" id="tab-${t}" aria-controls="panel" aria-selected="${state.tab === t}" data-tab="${t}">${s.tabs[t]}${lv > 0 ? html`<span class="dot" style="--c:${levelColor(lv)}"></span>` : ''}</button>`;
+  })}`;
+}
