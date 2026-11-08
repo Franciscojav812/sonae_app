@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sonae Japan</title>
+  <meta name="description" content="Sonae 備え — 日本の総合災害モニター。地震・緊急地震速報・津波・台風・気象・Jアラート・火山をリアルタイムで。">
+  <meta name="theme-color" content="#0d1524">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=IBM+Plex+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header class="top gutter">
+    <div class="wrap">
+      <div class="brand"><span class="kanji">備え</span><span class="name">SONAE</span><span class="tag" data-i="tagline"></span></div>
+      <span class="net" id="net" data-state="connecting" role="status"><i></i><span id="netLabel"></span></span>
+      <div class="seg" role="group" aria-label="Language">
+        <button type="button" data-lang="ja">日本語</button><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button>
+      </div>
+      <button type="button" class="pillbtn" id="sound" aria-pressed="false"></button>
+      <button type="button" class="pillbtn" id="refresh"></button>
+      <div class="clock"><b id="jst">--:--:--</b><span id="jstdate">JST</span></div>
+    </div>
+  </header>
+
+  <section class="band gutter" aria-label="Alert level">
+    <div class="wrap">
+      <div class="level">
+        <div class="lamp" id="lamp"></div>
+        <div><div class="lbl" data-i="overall"></div><div class="val" id="overallVal">—</div><div class="sub" id="overallSub"></div></div>
+      </div>
+      <div class="chips" id="chips"></div>
+    </div>
+  </section>
+
+  <main class="main gutter">
+    <div class="wrap grid">
+      <section class="mapcard" aria-label="Map">
+        <div class="maphead">
+          <h2 data-i="map.title"></h2>
+          <button type="button" class="layer" data-layer="quakes" style="--c:var(--d1)"><i></i><span data-i="map.quakes"></span></button>
+          <button type="button" class="layer" data-layer="weather" style="--c:var(--d4)"><i></i><span data-i="map.weather"></span></button>
+          <button type="button" class="layer" data-layer="typhoons" style="--c:var(--lv3)"><i></i><span data-i="map.typhoons"></span></button>
+          <button type="button" class="layer" data-layer="volcanoes" style="--c:var(--d2)"><i></i><span data-i="map.volcanoes"></span></button>
+          <button type="button" class="layer" data-layer="trenches" style="--c:var(--trench)"><i></i><span data-i="map.trenches"></span></button>
+        </div>
+        <div class="mapwrap">
+          <svg id="map" viewBox="0 0 762 795" role="img" aria-label="Japan hazard map"></svg>
+          <div class="tip" id="tip" hidden></div>
+        </div>
+        <div class="legend" id="legend"></div>
+      </section>
+
+      <section class="side">
+        <nav class="tabs" role="tablist" id="tabs"></nav>
+        <div class="view" id="panel" role="tabpanel"></div>
+      </section>
+    </div>
+    <footer class="wrap"><span data-i="footer.0"></span><span data-i="footer.1"></span></footer>
+  </main>
+
+  <div class="alert gutter" id="alert" role="alert" hidden>
+    <div class="wrap"><b id="alertTitle"></b><span id="alertBody"></span><button type="button" id="alertOk" data-i="ok"></button></div>
+  </div>
+</body>
+</html>

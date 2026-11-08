@@ -12,10 +12,10 @@ export function distanceKm(lat1, lon1, lat2, lon2) {
 }
 
 /**
- * Equirectangular projection tuned for the archipelago (lon 121–152°E, lat 22.5–46.5°N).
+ * Equirectangular projection tuned for the archipelago (lon 121–152°E, lat 20–46.5°N).
  * The x scale is compressed by ≈cos(35°) so shapes keep their proportions at mid-latitudes.
  */
-export const VIEWBOX = { width: 762, height: 720, lon0: 121, lat0: 46.5, kx: 24.6, ky: 30 };
+export const VIEWBOX = { width: 762, height: 795, lon0: 121, lat0: 46.5, kx: 24.6, ky: 30 };
 
 export function project(lon, lat, vb = VIEWBOX) {
   return [(lon - vb.lon0) * vb.kx, (vb.lat0 - lat) * vb.ky];
