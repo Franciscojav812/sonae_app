@@ -7,7 +7,7 @@ import { statusBadge, sourceNote } from '../common.js';
 export function tsunamiView(ctx) {
   const { state, s } = ctx;
   const t = state.tsunami;
-  const gradeColor = (g) => (g === 'MajorWarning' ? 'var(--lv3)' : g === 'Warning' ? 'var(--lv2)' : 'var(--accent)');
+  const gradeColor = (g) => (g === 'MajorWarning' ? 'var(--lv3)' : g === 'Warning' ? 'var(--lv2)' : '#c9a400');
   return html`
   <div class="card"><h3>${s.tsunami.title}<span class="src">${statusBadge(state.sources.tsunami, ctx)}</span></h3>
     ${t.active
@@ -64,7 +64,7 @@ export function missileView(ctx) {
 
 export function volcanoView(ctx) {
   const { s, lang } = ctx;
-  const color = (n) => (n >= 4 ? 'var(--lv3)' : n === 3 ? 'var(--lv2)' : n === 2 ? 'var(--accent)' : 'var(--muted)');
+  const color = (n) => (n >= 4 ? 'var(--lv3)' : n === 3 ? 'var(--lv2)' : n === 2 ? '#c9a400' : 'var(--muted)');
   return html`
   <div class="card"><h3>${s.volcano.title}</h3><div class="tblwrap"><table class="t">
     <thead><tr><th>${s.volcano.name}</th><th>${s.volcano.notes}</th></tr></thead><tbody>
