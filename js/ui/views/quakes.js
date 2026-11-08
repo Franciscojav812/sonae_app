@@ -1,7 +1,7 @@
 import { html, formatJST, relativeTime, pickLang } from '../../lib/format.js';
 import { SHINDO_ORDER } from '../../domain/quakes.js';
 import { SHINDO_COLORS, SHINDO_DESC } from '../../data/content.js';
-import { depthColor, shindoChip, statusBadge, sourceNote } from '../common.js';
+import { depthColor, shindoChip, statusBadge, sourceNote, provenanceLine } from '../common.js';
 
 /** Magnitude-over-time scatter for the last 7 days; dot size and colour follow the map. */
 function magnitudeChart(quakes, ctx) {
@@ -29,7 +29,9 @@ export function quakesView(ctx) {
       <div class="mag">${q.magnitude.toFixed(1)}</div>
       ${shindoChip(q.maxShindo, s.quakes.shindo)}
       <div class="place"><b>${q.place}</b><small>${s.quakes.depth} ${q.depthKm ?? s.quakes.unknownDepth} km · ${formatJST(q.time, lang, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })} JST</small></div>
-      <div class="when">${relativeTime(q.time, now, lang)}<div class="tags">${q.sources.map((src) => html`<span class="badge">${src}</span>`)}</div></div>
+      <div class="when">${relativeTime(q.time, now, lang)}<div class="tags">${q.sources.map((src) => (src === 'USGS' && q.url
+        ? html`<a class="badge" href="${q.url}" target="_blank" rel="noopener" title="${s.trust.usgsEvent}">USGS ↗</a>`
+        : html`<span class="badge">${src}</span>`))}</div></div>
     </li>`);
 
   const scale = ['0', ...SHINDO_ORDER].map((k) => {
@@ -43,6 +45,7 @@ export function quakesView(ctx) {
     ${magnitudeChart(list, ctx)}
     <ul class="qlist">${items}</ul>
     ${sourceNote(state.sources.quakes, ctx)}
+    ${provenanceLine('quakes', ctx)}
   </div>
   <div class="card"><h3>${s.quakes.scale}</h3>
     <div class="scale" id="scale">${scale}</div>

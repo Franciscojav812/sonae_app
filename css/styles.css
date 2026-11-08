@@ -215,6 +215,16 @@ table.t td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line-2); ve
 .chart .tx { fill: var(--muted); font: 10.5px var(--f-body); }
 .guidegrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
 
+/* ---------- trust ---------- */
+.advice { border-left: 6px solid var(--c); }
+.advice-title { font-size: 20px; font-weight: 700; line-height: 1.35; margin: 0 0 8px; }
+.prov { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin: 12px 0 0; padding-top: 10px; border-top: 1px solid var(--line-2); font-size: 12.5px; color: var(--muted); }
+.prov-lbl { font-weight: 700; color: var(--fg); }
+.prov-item { display: inline-flex; align-items: center; gap: 5px; }
+.prov a { margin-left: auto; }
+.model-note { margin: 0 0 10px; padding: 6px 10px; font-size: 13px; color: var(--fg); background: var(--panel-2); border: 1px dashed var(--line); border-radius: var(--r); }
+table.gloss td:first-child { white-space: nowrap; }
+
 /* alerts */
 .alert { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding-top: 12px; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); color: #fff; background: var(--lv2); }
 .alert .wrap { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }

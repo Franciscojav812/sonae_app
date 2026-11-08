@@ -2,11 +2,16 @@
 import { html, formatJST } from '../lib/format.js';
 import { cityName, levelColor } from './common.js';
 
-export const TABS = ['overview', 'quakes', 'tsunami', 'typhoon', 'weather', 'missile', 'volcano', 'guide'];
+export const TABS = ['overview', 'quakes', 'tsunami', 'typhoon', 'weather', 'missile', 'volcano', 'guide', 'sources'];
 const HAZARD_TAB = { quake: 'quakes', tsunami: 'tsunami', typhoon: 'typhoon', weather: 'weather', missile: 'missile', volcano: 'volcano' };
+/** Feed behind each hazard chip, to flag chips whose data is not live. */
+const HAZARD_FEED = { quake: 'quakes', tsunami: 'tsunami', typhoon: 'typhoons', weather: 'weather' };
 
 function chipText(key, h, ctx) {
   const { s, lang } = ctx;
+  const feedStatus = ctx.state.sources[HAZARD_FEED[key]]?.status;
+  // Never show a reassuring "normal" for a feed we could not read.
+  if (HAZARD_FEED[key] && h[key].level === 0 && feedStatus && feedStatus !== 'live' && feedStatus !== 'cached') return s.status[feedStatus];
   switch (key) {
     case 'quake': {
       const q = h.quake.top;
@@ -23,13 +28,16 @@ function chipText(key, h, ctx) {
 }
 
 export function renderBand(ctx) {
-  const { s, hazards: h, state } = ctx;
+  const { s, hazards: h, state, banner, confidence } = ctx;
   const keys = Object.keys(HAZARD_TAB);
   const updated = Math.max(0, ...Object.values(state.sources).map((m) => m?.fetchedAt ?? 0));
+  const offline = [...confidence.missing, ...confidence.degraded].map((f) => s.trust.feeds[f]).join('、');
+  const notes = { demo: s.trust.demoNote, partial: s.trust.partialNote(offline), none: s.trust.noneNote };
+  const loading = !updated;
   return {
-    overall: h.overall,
-    label: s.levels[h.overall],
-    sub: updated ? `${s.updated} ${formatJST(updated, ctx.lang, { hour: '2-digit', minute: '2-digit' })} JST` : s.status.loading,
+    overall: loading ? 'unconfirmed' : banner.level,
+    label: loading ? s.status.loading : banner.level === 'unconfirmed' ? s.trust.unconfirmed : s.levels[banner.level],
+    sub: loading ? '' : notes[banner.note] ?? `${s.updated} ${formatJST(updated, ctx.lang, { hour: '2-digit', minute: '2-digit' })} JST`,
     chips: html`${keys.map((k) => {
       const lv = h[k].level;
       return html`<button class="chip" data-tab="${HAZARD_TAB[k]}" style="--c:${levelColor(lv)}"><span class="h">${s.hazards[k]} · ${s.levels[lv]}</span><span class="s">${chipText(k, h, ctx)}</span></button>`;

@@ -1,6 +1,6 @@
 import { html } from '../../lib/format.js';
 import { weatherFlags, weatherGlyph } from '../../domain/weather.js';
-import { cityName, levelColor, levelInk, statusBadge, sourceNote } from '../common.js';
+import { cityName, levelColor, levelInk, statusBadge, sourceNote, provenanceLine } from '../common.js';
 
 function forecast(w, ctx) {
   const { s, lang } = ctx;
@@ -39,7 +39,9 @@ export function weatherView(ctx) {
     </button>`);
   return html`
   <div class="card"><h3>${s.weather.title}<span class="src">${statusBadge(state.sources.weather, ctx)}</span></h3>
+    <p class="model-note">${s.trust.weatherModel}</p>
     <div class="wgrid">${cards}</div>${sourceNote(state.sources.weather, ctx)}
+    ${provenanceLine('weather', ctx)}
   </div>
   ${selected ? forecast(selected, ctx) : ''}`;
 }
