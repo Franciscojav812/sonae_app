@@ -1,0 +1,53 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     131.2,
+     21.4
+    ]
+   },
+   "properties": {
+    "eventtype": "TC",
+    "eventid": 1001234,
+    "name": "EXAMPLE-26",
+    "alertlevel": "Orange",
+    "iscurrent": "true",
+    "fromdate": "2026-11-05T00:00:00.000Z",
+    "todate": "2026-11-08T00:00:00.000Z",
+    "severitydata": {
+     "severity": 148,
+     "severitytext": "Typhoon (maximum wind speed of 148 km/h)",
+     "severityunit": "km/h"
+    },
+    "url": {
+     "report": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001234"
+    }
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75,
+     25
+    ]
+   },
+   "properties": {
+    "eventtype": "TC",
+    "eventid": 1009999,
+    "name": "ATLANTIC-STORM",
+    "alertlevel": "Green",
+    "iscurrent": "true",
+    "severitydata": {
+     "severity": 90,
+     "severityunit": "km/h"
+    }
+   }
+  }
+ ]
+}

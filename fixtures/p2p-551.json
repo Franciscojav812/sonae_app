@@ -1,0 +1,1852 @@
+[
+ {
+  "_id": "e632c25b21",
+  "code": 551,
+  "time": "2026/11/08 08:48:00",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/08 08:48:00",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/08 08:45:00",
+   "maxScale": 40,
+   "domesticTsunami": "NonEffective",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "三陸沖",
+    "latitude": 38.9,
+    "longitude": 142.3,
+    "depth": 44,
+    "magnitude": 5.8
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "e632c25b21p",
+  "code": 551,
+  "time": "2026/11/08 08:46:00",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/08 08:46:00",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/08 08:45:00",
+   "maxScale": 40,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "38a2782a6b",
+  "code": 551,
+  "time": "2026/11/07 23:40:25",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 23:40:25",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 23:37:25",
+   "maxScale": 10,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "鳥島近海",
+    "latitude": 30.22,
+    "longitude": 139.73,
+    "depth": 399,
+    "magnitude": 3.1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "cc145be8b3",
+  "code": 551,
+  "time": "2026/11/07 21:30:40",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 21:30:40",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 21:27:40",
+   "maxScale": 10,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "鳥島近海",
+    "latitude": 30.02,
+    "longitude": 139.43,
+    "depth": 324,
+    "magnitude": 4
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "2d08a9904c",
+  "code": 551,
+  "time": "2026/11/07 09:41:38",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 09:41:38",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 09:38:38",
+   "maxScale": 10,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "鳥島近海",
+    "latitude": 29.61,
+    "longitude": 139.44,
+    "depth": 445,
+    "magnitude": 3.4
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "b154eb7cff",
+  "code": 551,
+  "time": "2026/11/07 08:36:59",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 08:36:59",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 08:33:59",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "十勝沖",
+    "latitude": 41.67,
+    "longitude": 143.14,
+    "depth": 48,
+    "magnitude": 2.8
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "de2c40b342",
+  "code": 551,
+  "time": "2026/11/07 02:45:14",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 02:45:14",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 02:42:14",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "千葉県北西部",
+    "latitude": 35.62,
+    "longitude": 140.19,
+    "depth": 74,
+    "magnitude": 3.8
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "de2c40b342p",
+  "code": 551,
+  "time": "2026/11/07 02:43:14",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 02:43:14",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 02:42:14",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "d16e42424d",
+  "code": 551,
+  "time": "2026/11/07 02:17:19",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 02:17:19",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 02:14:19",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "茨城県沖",
+    "latitude": 36.13,
+    "longitude": 141.98,
+    "depth": 39,
+    "magnitude": 3.5
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "d16e42424dp",
+  "code": 551,
+  "time": "2026/11/07 02:15:19",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 02:15:19",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 02:14:19",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "22068f5bdd",
+  "code": 551,
+  "time": "2026/11/07 02:00:06",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/07 02:00:06",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/07 01:57:06",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "トカラ列島近海",
+    "latitude": 29.41,
+    "longitude": 129.53,
+    "depth": 15,
+    "magnitude": 2.9
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "26a861fc3a",
+  "code": 551,
+  "time": "2026/11/06 23:42:46",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 23:42:46",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 23:39:46",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "長野県中部",
+    "latitude": 35.97,
+    "longitude": 137.65,
+    "depth": 12,
+    "magnitude": 4
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "26a861fc3ap",
+  "code": 551,
+  "time": "2026/11/06 23:40:46",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 23:40:46",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 23:39:46",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "83b14988e7",
+  "code": 551,
+  "time": "2026/11/06 23:30:22",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 23:30:22",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 23:27:22",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "トカラ列島近海",
+    "latitude": 29.46,
+    "longitude": 129.38,
+    "depth": 15,
+    "magnitude": 3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "a63f75c43d",
+  "code": 551,
+  "time": "2026/11/06 22:24:31",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 22:24:31",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 22:21:31",
+   "maxScale": 10,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "鳥島近海",
+    "latitude": 29.67,
+    "longitude": 139.67,
+    "depth": 383,
+    "magnitude": 3.2
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "b58219ca6a",
+  "code": 551,
+  "time": "2026/11/06 21:35:27",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 21:35:27",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 21:32:27",
+   "maxScale": 40,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "トカラ列島近海",
+    "latitude": 29.2,
+    "longitude": 129.28,
+    "depth": 14,
+    "magnitude": 4.7
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "b58219ca6ap",
+  "code": 551,
+  "time": "2026/11/06 21:33:27",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 21:33:27",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 21:32:27",
+   "maxScale": 40,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "499c459c",
+  "code": 551,
+  "time": "2026/11/06 21:27:48",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 21:27:48",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 21:24:48",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "宮城県沖",
+    "latitude": 38.18,
+    "longitude": 143,
+    "depth": 42,
+    "magnitude": 3.3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "cecab2b7f7",
+  "code": 551,
+  "time": "2026/11/06 20:01:07",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 20:01:07",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 19:58:07",
+   "maxScale": 45,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "トカラ列島近海",
+    "latitude": 29.12,
+    "longitude": 129.34,
+    "depth": 15,
+    "magnitude": 5.2
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "cecab2b7f7p",
+  "code": 551,
+  "time": "2026/11/06 19:59:07",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 19:59:07",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 19:58:07",
+   "maxScale": 45,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "56f111b731",
+  "code": 551,
+  "time": "2026/11/06 18:36:00",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 18:36:00",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 18:33:00",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "長野県中部",
+    "latitude": 35.75,
+    "longitude": 137.49,
+    "depth": 5,
+    "magnitude": 3.1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "401964e521",
+  "code": 551,
+  "time": "2026/11/06 11:02:01",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 11:02:01",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 10:59:01",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "トカラ列島近海",
+    "latitude": 29.12,
+    "longitude": 129.53,
+    "depth": 16,
+    "magnitude": 3.9
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "401964e521p",
+  "code": 551,
+  "time": "2026/11/06 11:00:01",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/06 11:00:01",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/06 10:59:01",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "7e6028a53e",
+  "code": 551,
+  "time": "2026/11/05 22:54:32",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 22:54:32",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 22:51:32",
+   "maxScale": 10,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "鳥島近海",
+    "latitude": 29.86,
+    "longitude": 139.05,
+    "depth": 396,
+    "magnitude": 3.1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "a56321c039",
+  "code": 551,
+  "time": "2026/11/05 21:12:37",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 21:12:37",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 21:09:37",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "十勝沖",
+    "latitude": 41.65,
+    "longitude": 142.6,
+    "depth": 66,
+    "magnitude": 3.9
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "a56321c039p",
+  "code": 551,
+  "time": "2026/11/05 21:10:37",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 21:10:37",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 21:09:37",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "cb672f19f1",
+  "code": 551,
+  "time": "2026/11/05 19:30:49",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 19:30:49",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 19:27:49",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "トカラ列島近海",
+    "latitude": 29.4,
+    "longitude": 129.42,
+    "depth": 17,
+    "magnitude": 4
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "cb672f19f1p",
+  "code": 551,
+  "time": "2026/11/05 19:28:49",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 19:28:49",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 19:27:49",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "153032f047",
+  "code": 551,
+  "time": "2026/11/05 17:25:57",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 17:25:57",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 17:22:57",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "石垣島近海",
+    "latitude": 24.45,
+    "longitude": 124.54,
+    "depth": 37,
+    "magnitude": 3.5
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "153032f047p",
+  "code": 551,
+  "time": "2026/11/05 17:23:57",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 17:23:57",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 17:22:57",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "d9980bc141",
+  "code": 551,
+  "time": "2026/11/05 16:07:44",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 16:07:44",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 16:04:44",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "茨城県沖",
+    "latitude": 36.21,
+    "longitude": 141.98,
+    "depth": 51,
+    "magnitude": 3.2
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "ac4bb5d58c",
+  "code": 551,
+  "time": "2026/11/05 13:28:10",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 13:28:10",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 13:25:10",
+   "maxScale": 10,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "鳥島近海",
+    "latitude": 29.55,
+    "longitude": 139.76,
+    "depth": 350,
+    "magnitude": 3.1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "54cece8552",
+  "code": 551,
+  "time": "2026/11/05 12:14:05",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 12:14:05",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 12:11:05",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "能登半島沖",
+    "latitude": 37.39,
+    "longitude": 137.19,
+    "depth": 13,
+    "magnitude": 3.1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "452f6dc01a",
+  "code": 551,
+  "time": "2026/11/05 11:55:28",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 11:55:28",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 11:52:28",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "十勝沖",
+    "latitude": 41.48,
+    "longitude": 143.48,
+    "depth": 39,
+    "magnitude": 2.9
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "425f7d5d11",
+  "code": 551,
+  "time": "2026/11/05 11:54:31",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 11:54:31",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 11:51:31",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "能登半島沖",
+    "latitude": 37.54,
+    "longitude": 137.14,
+    "depth": 14,
+    "magnitude": 3.5
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "425f7d5d11p",
+  "code": 551,
+  "time": "2026/11/05 11:52:31",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 11:52:31",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 11:51:31",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "2e741b6791",
+  "code": 551,
+  "time": "2026/11/05 08:10:29",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/05 08:10:29",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/05 08:07:29",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "トカラ列島近海",
+    "latitude": 29.37,
+    "longitude": 129.23,
+    "depth": 12,
+    "magnitude": 3.2
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "5222c08f4d",
+  "code": 551,
+  "time": "2026/11/04 14:47:56",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/04 14:47:56",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/04 14:44:56",
+   "maxScale": 45,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "十勝沖",
+    "latitude": 41.65,
+    "longitude": 142.52,
+    "depth": 58,
+    "magnitude": 5
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "5222c08f4dp",
+  "code": 551,
+  "time": "2026/11/04 14:45:56",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/04 14:45:56",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/04 14:44:56",
+   "maxScale": 45,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "4ba54e3a94",
+  "code": 551,
+  "time": "2026/11/04 08:26:26",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/04 08:26:26",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/04 08:23:26",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "トカラ列島近海",
+    "latitude": 29.46,
+    "longitude": 129.43,
+    "depth": 20,
+    "magnitude": 3.2
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "8da6ea9b63",
+  "code": 551,
+  "time": "2026/11/03 21:41:23",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 21:41:23",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 21:38:23",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "茨城県沖",
+    "latitude": 36.24,
+    "longitude": 141.99,
+    "depth": 41,
+    "magnitude": 3.6
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "8da6ea9b63p",
+  "code": 551,
+  "time": "2026/11/03 21:39:23",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 21:39:23",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 21:38:23",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "d20b83914e",
+  "code": 551,
+  "time": "2026/11/03 12:39:50",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 12:39:50",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 12:36:50",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "日向灘",
+    "latitude": 32.03,
+    "longitude": 131.81,
+    "depth": 29,
+    "magnitude": 3.6
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "d20b83914ep",
+  "code": 551,
+  "time": "2026/11/03 12:37:50",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 12:37:50",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 12:36:50",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "9b642bad7b",
+  "code": 551,
+  "time": "2026/11/03 11:50:06",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 11:50:06",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 11:47:06",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "上川地方北部",
+    "latitude": 43.83,
+    "longitude": 142.08,
+    "depth": 18,
+    "magnitude": 3.6
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "9b642bad7bp",
+  "code": 551,
+  "time": "2026/11/03 11:48:06",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 11:48:06",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 11:47:06",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "1234f8f931",
+  "code": 551,
+  "time": "2026/11/03 09:25:19",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 09:25:19",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 09:22:19",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "長野県中部",
+    "latitude": 36.1,
+    "longitude": 137.42,
+    "depth": 10,
+    "magnitude": 3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "1e91793e",
+  "code": 551,
+  "time": "2026/11/03 06:48:02",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 06:48:02",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 06:45:02",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "長野県中部",
+    "latitude": 35.83,
+    "longitude": 137.42,
+    "depth": 8,
+    "magnitude": 3.8
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "1e91793ep",
+  "code": 551,
+  "time": "2026/11/03 06:46:02",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 06:46:02",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 06:45:02",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "cec78135f5",
+  "code": 551,
+  "time": "2026/11/03 05:53:11",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 05:53:11",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 05:50:11",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "日向灘",
+    "latitude": 32.35,
+    "longitude": 131.84,
+    "depth": 39,
+    "magnitude": 3.5
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "cec78135f5p",
+  "code": 551,
+  "time": "2026/11/03 05:51:11",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 05:51:11",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 05:50:11",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "2d48f83b39",
+  "code": 551,
+  "time": "2026/11/03 05:03:22",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 05:03:22",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 05:00:22",
+   "maxScale": 40,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "能登半島沖",
+    "latitude": 37.44,
+    "longitude": 137.08,
+    "depth": 10,
+    "magnitude": 4.3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "2d48f83b39p",
+  "code": 551,
+  "time": "2026/11/03 05:01:22",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 05:01:22",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 05:00:22",
+   "maxScale": 40,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "8ecc1c821a",
+  "code": 551,
+  "time": "2026/11/03 04:51:52",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/03 04:51:52",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/03 04:48:52",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "千葉県北西部",
+    "latitude": 35.78,
+    "longitude": 140.07,
+    "depth": 73,
+    "magnitude": 3.1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "a10968c041",
+  "code": 551,
+  "time": "2026/11/02 20:50:10",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 20:50:10",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 20:47:10",
+   "maxScale": 40,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "石垣島近海",
+    "latitude": 24.39,
+    "longitude": 124.51,
+    "depth": 42,
+    "magnitude": 4.1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "a10968c041p",
+  "code": 551,
+  "time": "2026/11/02 20:48:10",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 20:48:10",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 20:47:10",
+   "maxScale": 40,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "dcd1666435",
+  "code": 551,
+  "time": "2026/11/02 17:37:49",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 17:37:49",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 17:34:49",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "上川地方北部",
+    "latitude": 44.15,
+    "longitude": 142.25,
+    "depth": 20,
+    "magnitude": 3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "98baaf4ba7",
+  "code": 551,
+  "time": "2026/11/02 15:26:41",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 15:26:41",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 15:23:41",
+   "maxScale": 40,
+   "domesticTsunami": "NonEffective",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "鳥島近海",
+    "latitude": 30.23,
+    "longitude": 139.38,
+    "depth": 339,
+    "magnitude": 5.8
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "98baaf4ba7p",
+  "code": 551,
+  "time": "2026/11/02 15:24:41",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 15:24:41",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 15:23:41",
+   "maxScale": 40,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "c34c57a3da",
+  "code": 551,
+  "time": "2026/11/02 09:52:41",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 09:52:41",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 09:49:41",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "日向灘",
+    "latitude": 32.21,
+    "longitude": 131.99,
+    "depth": 34,
+    "magnitude": 3.3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "c96e157279",
+  "code": 551,
+  "time": "2026/11/02 08:30:41",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 08:30:41",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 08:27:41",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "長野県中部",
+    "latitude": 35.72,
+    "longitude": 137.74,
+    "depth": 8,
+    "magnitude": 2.9
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "8f0597ed2a",
+  "code": 551,
+  "time": "2026/11/02 04:55:38",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 04:55:38",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 04:52:38",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "能登半島沖",
+    "latitude": 37.41,
+    "longitude": 137.05,
+    "depth": 6,
+    "magnitude": 2.6
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "db670f93d5",
+  "code": 551,
+  "time": "2026/11/02 02:02:26",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 02:02:26",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 01:59:26",
+   "maxScale": 40,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "十勝沖",
+    "latitude": 41.3,
+    "longitude": 142.7,
+    "depth": 59,
+    "magnitude": 4.3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "db670f93d5p",
+  "code": 551,
+  "time": "2026/11/02 02:00:26",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 02:00:26",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 01:59:26",
+   "maxScale": 40,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "daac5ea2e6",
+  "code": 551,
+  "time": "2026/11/02 00:30:08",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 00:30:08",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 00:27:08",
+   "maxScale": 45,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "茨城県沖",
+    "latitude": 36.03,
+    "longitude": 142.05,
+    "depth": 50,
+    "magnitude": 4.8
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "daac5ea2e6p",
+  "code": 551,
+  "time": "2026/11/02 00:28:08",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/02 00:28:08",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/02 00:27:08",
+   "maxScale": 45,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "594f2cc5ea",
+  "code": 551,
+  "time": "2026/11/01 22:01:27",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/01 22:01:27",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/01 21:58:27",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "石垣島近海",
+    "latitude": 23.95,
+    "longitude": 125.02,
+    "depth": 38,
+    "magnitude": 3.3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "669f40e04f",
+  "code": 551,
+  "time": "2026/11/01 20:14:48",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/01 20:14:48",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/01 20:11:48",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "能登半島沖",
+    "latitude": 37.5,
+    "longitude": 137.11,
+    "depth": 12,
+    "magnitude": 3.8
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "669f40e04fp",
+  "code": 551,
+  "time": "2026/11/01 20:12:48",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/01 20:12:48",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/01 20:11:48",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "b298c1ed4d",
+  "code": 551,
+  "time": "2026/11/01 14:30:16",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/01 14:30:16",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/01 14:27:16",
+   "maxScale": 30,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "宮城県沖",
+    "latitude": 38.88,
+    "longitude": 142.51,
+    "depth": 47,
+    "magnitude": 3.7
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "b298c1ed4dp",
+  "code": 551,
+  "time": "2026/11/01 14:28:16",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/01 14:28:16",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/01 14:27:16",
+   "maxScale": 30,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "6eaf2abc40",
+  "code": 551,
+  "time": "2026/11/01 13:29:57",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/01 13:29:57",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/01 13:26:57",
+   "maxScale": 20,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "能登半島沖",
+    "latitude": 37.51,
+    "longitude": 137,
+    "depth": 12,
+    "magnitude": 3.3
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "bd40edea2d",
+  "code": 551,
+  "time": "2026/11/01 11:18:37",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/01 11:18:37",
+   "type": "DetailScale",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/01 11:15:37",
+   "maxScale": 45,
+   "domesticTsunami": "None",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "茨城県沖",
+    "latitude": 36.51,
+    "longitude": 142.16,
+    "depth": 32,
+    "magnitude": 4.9
+   }
+  },
+  "points": []
+ },
+ {
+  "_id": "bd40edea2dp",
+  "code": 551,
+  "time": "2026/11/01 11:16:37",
+  "issue": {
+   "source": "気象庁",
+   "time": "2026/11/01 11:16:37",
+   "type": "ScalePrompt",
+   "correct": "None"
+  },
+  "earthquake": {
+   "time": "2026/11/01 11:15:37",
+   "maxScale": 45,
+   "domesticTsunami": "Checking",
+   "foreignTsunami": "Unknown",
+   "hypocenter": {
+    "name": "",
+    "latitude": -200,
+    "longitude": -200,
+    "depth": -1,
+    "magnitude": -1
+   }
+  },
+  "points": []
+ }
+]

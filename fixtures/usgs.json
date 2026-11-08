@@ -1,0 +1,483 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "title": "USGS Earthquakes (fixture)"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "us7000e3nk",
+   "properties": {
+    "mag": 5.7,
+    "place": "51 km E of somewhere, Japan",
+    "time": 1794095100387,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.209,
+     38.986,
+     41.2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000cab0",
+   "properties": {
+    "mag": 4.1,
+    "place": "58 km E of somewhere, Japan",
+    "time": 1794054458462,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     139.297,
+     30.037,
+     326.2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000ivyl",
+   "properties": {
+    "mag": 3.8,
+    "place": "30 km E of somewhere, Japan",
+    "time": 1793986933070,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     140.263,
+     35.506,
+     74.6
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us70002gw6",
+   "properties": {
+    "mag": 4.1,
+    "place": "74 km E of somewhere, Japan",
+    "time": 1793975986341,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     137.74,
+     35.862,
+     12.8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us70007ddu",
+   "properties": {
+    "mag": 4.8,
+    "place": "63 km E of somewhere, Japan",
+    "time": 1793968350353,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     129.175,
+     29.062,
+     13.3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000e82i",
+   "properties": {
+    "mag": 5.2,
+    "place": "89 km E of somewhere, Japan",
+    "time": 1793962685895,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     129.405,
+     29.12,
+     15.4
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000dyo7",
+   "properties": {
+    "mag": 3.7,
+    "place": "70 km E of somewhere, Japan",
+    "time": 1793930340878,
+    "magType": "mb",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     129.396,
+     28.992,
+     14.6
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000hjl9",
+   "properties": {
+    "mag": 4,
+    "place": "43 km E of somewhere, Japan",
+    "time": 1793880580901,
+    "magType": "m",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.507,
+     41.617,
+     68
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us700029ia",
+   "properties": {
+    "mag": 4.1,
+    "place": "87 km E of somewhere, Japan",
+    "time": 1793874469545,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     129.533,
+     29.338,
+     17.7
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us70003dot",
+   "properties": {
+    "mag": 5.1,
+    "place": "95 km E of somewhere, Japan",
+    "time": 1793771093257,
+    "magType": "m",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.633,
+     41.753,
+     60.8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us70002rc0",
+   "properties": {
+    "mag": 3.5,
+    "place": "96 km E of somewhere, Japan",
+    "time": 1793709505536,
+    "magType": "mb",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     141.886,
+     36.3,
+     38
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us70004ato",
+   "properties": {
+    "mag": 3.5,
+    "place": "40 km E of somewhere, Japan",
+    "time": 1793677011180,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     131.69,
+     31.934,
+     32
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000kq1v",
+   "properties": {
+    "mag": 3.5,
+    "place": "61 km E of somewhere, Japan",
+    "time": 1793674029531,
+    "magType": "mb",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.046,
+     43.741,
+     16.1
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us70007eu1",
+   "properties": {
+    "mag": 3.8,
+    "place": "50 km E of somewhere, Japan",
+    "time": 1793655904788,
+    "magType": "m",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     137.474,
+     35.697,
+     8.6
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000dnmz",
+   "properties": {
+    "mag": 4.2,
+    "place": "47 km E of somewhere, Japan",
+    "time": 1793649624955,
+    "magType": "mb",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     137.024,
+     37.375,
+     12.7
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000kzti",
+   "properties": {
+    "mag": 4.1,
+    "place": "72 km E of somewhere, Japan",
+    "time": 1793620033678,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     124.625,
+     24.396,
+     44.1
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000jdsw",
+   "properties": {
+    "mag": 5.6,
+    "place": "97 km E of somewhere, Japan",
+    "time": 1793600623521,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     139.23,
+     30.289,
+     336.7
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000gw39",
+   "properties": {
+    "mag": 4.1,
+    "place": "34 km E of somewhere, Japan",
+    "time": 1793552366441,
+    "magType": "m",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.747,
+     41.359,
+     56.4
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000k04y",
+   "properties": {
+    "mag": 4.7,
+    "place": "90 km E of somewhere, Japan",
+    "time": 1793546830609,
+    "magType": "mb",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     141.907,
+     35.99,
+     49.9
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000j6j4",
+   "properties": {
+    "mag": 3.6,
+    "place": "79 km E of somewhere, Japan",
+    "time": 1793531511188,
+    "magType": "m",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     137.043,
+     37.523,
+     12.4
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us70004tm6",
+   "properties": {
+    "mag": 3.8,
+    "place": "62 km E of somewhere, Japan",
+    "time": 1793510832959,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.533,
+     39.021,
+     47.9
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000d03v",
+   "properties": {
+    "mag": 4.9,
+    "place": "40 km E of somewhere, Japan",
+    "time": 1793499340890,
+    "magType": "mww",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.163,
+     36.516,
+     30.3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us70007rpx",
+   "properties": {
+    "mag": 4.4,
+    "place": "Kuril Islands",
+    "time": 1793723519767,
+    "magType": "mb",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     146.9,
+     43.6,
+     10.9
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000g9zn",
+   "properties": {
+    "mag": 4.9,
+    "place": "Izu Islands, Japan region",
+    "time": 1793832056656,
+    "magType": "mb",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.1,
+     30.1,
+     13.5
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "us7000biu6",
+   "properties": {
+    "mag": 4.4,
+    "place": "off the east coast of Honshu, Japan",
+    "time": 1793787664293,
+    "magType": "mb",
+    "tsunami": 0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     145.2,
+     40.4,
+     12
+    ]
+   }
+  }
+ ]
+}
