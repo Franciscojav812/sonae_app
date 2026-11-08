@@ -1,6 +1,6 @@
 {
   "name": "sonae",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Sonae 備え — real-time multi-hazard monitor for Japan (earthquakes, EEW, tsunami, typhoons, weather, J-Alert, volcanoes).",
   "type": "module",
