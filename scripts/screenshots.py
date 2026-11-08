@@ -17,7 +17,7 @@ FRAMES.mkdir(exist_ok=True)
 
 
 def settle(page):
-    page.wait_for_selector("#map circle.q", timeout=15000)
+    page.wait_for_selector("#map [data-quake]", timeout=15000)
     page.wait_for_timeout(1200)  # web fonts
 
 
@@ -29,16 +29,16 @@ with sync_playwright() as p:
         page.on("console", lambda m: m.type == "error" and errors.append(m.text))
         page.on("pageerror", lambda e: errors.append(str(e)))
 
-    # Desktop, dark, Japanese
-    ctx = browser.new_context(viewport={"width": 1440, "height": 900}, color_scheme="dark", locale="ja-JP", device_scale_factor=1)
+    # Desktop, Japanese
+    ctx = browser.new_context(viewport={"width": 1440, "height": 900}, color_scheme="light", locale="ja-JP", device_scale_factor=1)
     page = ctx.new_page(); watch(page)
     page.goto(f"{BASE}/?demo#overview"); settle(page)
-    page.screenshot(path=str(OUT / "overview-ja-dark.png"))
+    page.screenshot(path=str(OUT / "overview-ja.png"))
     page.click("#tab-quakes"); page.wait_for_timeout(300)
-    page.screenshot(path=str(OUT / "quakes-ja-dark.png"))
+    page.screenshot(path=str(OUT / "quakes-ja.png"))
 
     # Demo GIF: tab tour + selecting a quake
-    steps = ["#tab-overview", "#tab-quakes", ".qi >> nth=0", "#tab-weather", "[data-city=naha] >> nth=0", "#tab-typhoon", "#tab-tsunami", "#tab-missile"]
+    steps = ["#tab-overview", "#tab-quakes", ".qi >> nth=0", ".sm-zoom [data-z=\"-1\"]", "#tab-weather", "#tab-typhoon", "#tab-sources", "#tab-overview"]
     n = 0
     for sel in steps:
         page.click(sel); page.wait_for_timeout(350)
@@ -46,12 +46,12 @@ with sync_playwright() as p:
             page.screenshot(path=str(FRAMES / f"f{n:03d}.png")); n += 1
     ctx.close()
 
-    # Desktop, light, Spanish, weather tab
-    ctx = browser.new_context(viewport={"width": 1440, "height": 900}, color_scheme="light", locale="es-ES")
+    # Desktop, Spanish, Sources tab (dark theme)
+    ctx = browser.new_context(viewport={"width": 1440, "height": 900}, color_scheme="dark", locale="es-ES")
     page = ctx.new_page(); watch(page)
-    page.goto(f"{BASE}/?demo#weather"); settle(page)
+    page.goto(f"{BASE}/?demo#sources"); settle(page)
     page.click("[data-lang=es]"); page.wait_for_timeout(300)
-    page.screenshot(path=str(OUT / "weather-es-light.png"))
+    page.screenshot(path=str(OUT / "sources-es-dark.png"))
     ctx.close()
 
     # Phone
