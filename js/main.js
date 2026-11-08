@@ -2,7 +2,7 @@
  * Composition root: wires storage, data sources, the scheduler, the real-time
  * channel, the store and the views. No business rules live here.
  */
-import { ALERT, ENDPOINTS, POLL_MS, SOCKET } from './config.js';
+import { ALERT, BASEMAPS, ENDPOINTS, MAP_BOUNDS, POLL_MS, SOCKET } from './config.js';
 import { STRINGS, detectLang } from './i18n.js';
 import { createStorage } from './lib/storage.js';
 import { formatJST, pickLang } from './lib/format.js';
@@ -16,7 +16,8 @@ import { normalizeTsunami } from './domain/tsunami.js';
 import { normalizeEEW, isEewActive } from './domain/eew.js';
 import { pendingAlerts } from './domain/alerts.js';
 import { SHINDO_DESC } from './data/content.js';
-import { renderMap, tooltipFor } from './ui/map.js';
+import { overlayPainter, legendHtml, tooltipFor } from './ui/map.js';
+import { createSlippyMap } from './ui/slippymap.js';
 import { renderBand, renderTabs, TABS } from './ui/header.js';
 import { createAlerter } from './ui/alerts.js';
 import { overviewView } from './ui/views/overview.js';
@@ -39,6 +40,7 @@ const store = createStore({
   tab: TABS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview',
   minMag: prefs.minMag ?? 3,
   city: prefs.city ?? 'tokyo',
+  base: BASEMAPS[prefs.base] ? prefs.base : 'physical',
   layers: { quakes: true, weather: true, typhoons: true, volcanoes: false, trenches: true, ...prefs.layers },
   sound: false, // browsers only allow audio after a user gesture
   selectedQuake: null,
@@ -53,8 +55,8 @@ const store = createStore({
 });
 
 const savePrefs = () => {
-  const { lang, minMag, city, layers } = store.get();
-  storage.set('prefs', { lang, minMag, city, layers });
+  const { lang, minMag, city, layers, base } = store.get();
+  storage.set('prefs', { lang, minMag, city, layers, base });
 };
 
 /* ------------------------------------------------------------------ data */
@@ -166,9 +168,13 @@ function render(state) {
   $('#chips').innerHTML = String(band.chips);
   $('#tabs').innerHTML = String(renderTabs(ctx));
 
-  const map = renderMap(ctx);
-  $('#map').innerHTML = String(map.svg);
-  $('#legend').innerHTML = String(map.legend);
+  painter = overlayPainter(ctx);
+  map.redraw();
+  $('#legend').innerHTML = String(legendHtml(s));
+  for (const b of document.querySelectorAll('[data-base]')) {
+    b.textContent = BASEMAPS[b.dataset.base].label[state.lang];
+    b.setAttribute('aria-pressed', String(b.dataset.base === state.base));
+  }
   for (const b of document.querySelectorAll('[data-layer]')) b.setAttribute('aria-pressed', String(state.layers[b.dataset.layer]));
 
   const focused = document.activeElement?.id;
@@ -179,6 +185,16 @@ function render(state) {
 
   fireAlerts(state, s, now);
 }
+
+/* ------------------------------------------------------------------- map */
+
+let painter = () => '';
+const map = createSlippyMap($('#map'), {
+  basemaps: BASEMAPS,
+  base: store.get().base,
+  bounds: MAP_BOUNDS,
+  drawOverlay: (project, view) => painter(project, view),
+});
 
 store.subscribe(render);
 
@@ -205,12 +221,17 @@ document.addEventListener('click', (e) => {
     return;
   }
 
+  const base = t.closest('[data-base]');
+  if (base) { map.setBase(base.dataset.base); store.set({ base: base.dataset.base }); savePrefs(); return; }
+
   const quake = t.closest('[data-quake]');
   if (quake) {
     const id = quake.dataset.quake;
+    const q = store.get().quakes.find((x) => x.id === id);
     store.set((st) => ({ selectedQuake: st.selectedQuake === id ? null : id, tab: 'quakes' }));
     history.replaceState(null, '', '#quakes');
     if (t.closest('#map')) requestAnimationFrame(() => document.querySelector(`.qi[data-quake="${CSS.escape(id)}"]`)?.scrollIntoView({ block: 'nearest' }));
+    else if (q) map.flyTo([q.lon, q.lat], 7);
     return;
   }
 
@@ -247,6 +268,7 @@ const tip = $('#tip');
 const mapWrap = $('.mapwrap');
 $('#map').addEventListener('mousemove', (e) => {
   const el = e.target.closest('[data-quake],[data-volcano],[data-city]');
+  if (e.buttons) { tip.hidden = true; return; }
   const state = store.get();
   const content = el && tooltipFor(el, { state, s: STRINGS[state.lang], lang: state.lang });
   if (!content) { tip.hidden = true; return; }

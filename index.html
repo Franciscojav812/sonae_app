@@ -51,10 +51,13 @@
           <button type="button" class="layer" data-layer="trenches" style="--c:var(--trench)"><i></i><span data-i="map.trenches"></span></button>
         </div>
         <div class="mapwrap">
-          <svg id="map" viewBox="0 0 762 795" role="img" aria-label="Japan hazard map"></svg>
+          <div id="map" class="map" role="application" aria-label="Japan hazard map"></div>
           <div class="tip" id="tip" hidden></div>
         </div>
-        <div class="legend" id="legend"></div>
+        <div class="mapfoot">
+          <div class="legend" id="legend"></div>
+          <div class="seg basemaps" role="group" aria-label="Base map"><button type="button" data-base="physical"></button><button type="button" data-base="satellite"></button><button type="button" data-base="gsi"></button></div>
+        </div>
       </section>
 
       <section class="side">
